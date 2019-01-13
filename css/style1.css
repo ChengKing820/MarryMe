@@ -1,0 +1,20 @@
+﻿.index .indexrow{
+  text-align: center;
+  padding: 80px 80px;
+}
+
+.index .indexrow h1 {
+  padding:40px 0;
+}
+
+
+.index .hulurow {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.index .hulurow .col-mine{
+  display: inline-block;
+  padding: 10px;
+
+}

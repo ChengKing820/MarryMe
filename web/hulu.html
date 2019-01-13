@@ -1,0 +1,94 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="../css/style1.css" type="text/css" />
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="index">
+    <div class="container">
+      <div class="row hulurow">
+        <h1>请为葫芦兄弟选择代表特征</h1>
+        <div class="col-mine">
+            <img src="../img/siwa.jpg" style="height:100px;width:100px;" class="img-thumbnail">
+        </div>
+        <div class="col-mine">
+            <img src="../img/erwa.jpg" style="height:100px;width:100px;" class="img-thumbnail">
+        </div>
+        <div class="col-mine">
+            <img src="../img/liuwa.jpg" style="height:100px;width:100px;" class="img-thumbnail">
+        </div>
+        <div class="col-mine">
+            <img src="../img/dawa.jpg" style="height:100px;width:100px;" class="img-thumbnail">
+        </div>
+        <div class="col-mine">
+            <img src="../img/wuwa.jpg" style="height:100px;width:100px;" class="img-thumbnail">
+        </div>
+        <div class="col-mine">
+            <img src="../img/qiwa.jpg" style="height:100px;width:100px;" class="img-thumbnail">
+        </div>
+        <div class="col-mine">
+            <img src="../img/sanwa.jpg" style="height:100px;width:100px;" class="img-thumbnail">
+        </div>
+      </div>
+
+
+      <div class="row hulurow">
+          <div class="col-mine">
+              <img src="../img/gangtie.jpeg" style="height:100px;width:100px;" class="img-thumbnail">
+          </div>
+          <div class="col-mine">
+              <img src="../img/jirou.jpeg" style="height:100px;width:100px;" class="img-thumbnail">
+          </div>
+          <div class="col-mine">
+              <img src="../img/shui.jpeg" style="height:100px;width:100px;" class="img-thumbnail">
+          </div>
+          <div class="col-mine">
+              <img src="../img/yinshen.jpg" style="height:100px;width:100px;" class="img-thumbnail">
+          </div>
+          <div class="col-mine">
+              <img src="../img/xiaohulu.jpg" style="height:100px;width:100px;" class="img-thumbnail">
+          </div>
+          <div class="col-mine">
+              <img src="../img/huo.jpeg" style="height:100px;width:100px;" class="img-thumbnail">
+          </div>
+          <div class="col-mine">
+              <img src="../img/wangyuanjing.jpeg" style="height:100px;width:100px;" class="img-thumbnail">
+          </div>
+        </div>
+
+
+        <p>从左到右序号为1-7，将你的配对结果输入到下面的文本框中，前面的数字为葫芦娃序号，后面的数字为代表物序号，例如1号葫芦娃对7好物品，格式为例：17</p>
+        <p>每个配对间用 空格 分割 ，例如：17 32 46 54 </p>
+
+        <!-- 答案 16 27 34 42 53 65 71 -->
+        <input type="text" class="form-control" id="result" placeholder="结果">
+        <button type="button" class="btn btn-primary" onclick="check()">提交</button>
+    </div>
+  </div>
+
+
+</body>
+<script src="../js/jquery-2.0.3.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+  function check() {
+    var text = $('#result').val()
+    t = text.split(" ")
+    var res = ['16','27','34','42','53','65','71']
+    for(var i=0; i<7;i++){
+      var r = true
+      if($.inArray(res[i],t) == - 1){
+        r = false
+      }
+    }
+    if(!r){
+        alert('答案错误')
+      }else{
+        alert('答案正确')
+        location.href = './hulures.html'
+      }
+  }
+</script>

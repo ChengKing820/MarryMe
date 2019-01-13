@@ -1,0 +1,90 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../css/style1.css" type="text/css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+  
+  </head>
+  
+  <body>
+    <div class="index">
+      <div class="container">
+        <div class="row hulurow">
+          <h1>恭喜通过，请选择你认为最适合寻找密码的葫芦娃</h1>
+          <div class="col-mine">
+              <img src="../img/siwa.jpg" style="height:100px;width:100px;" class="img-thumbnail" onclick="check()">
+          </div>
+          <div class="col-mine">
+              <img src="../img/erwa.jpg" style="height:100px;width:100px;" class="img-thumbnail" onclick="rightchose()">
+          </div>
+          <div class="col-mine">
+              <img src="../img/liuwa.jpg" style="height:100px;width:100px;" class="img-thumbnail" onclick="check()">
+          </div>
+          <div class="col-mine">
+              <img src="../img/dawa.jpg" style="height:100px;width:100px;" class="img-thumbnail" onclick="check()">
+          </div>
+          <div class="col-mine">
+              <img src="../img/wuwa.jpg" style="height:100px;width:100px;" class="img-thumbnail" onclick="check()">
+          </div>
+          <div class="col-mine">
+              <img src="../img/qiwa.jpg" style="height:100px;width:100px;" class="img-thumbnail" onclick="check()">
+          </div>
+          <div class="col-mine">
+              <img src="../img/sanwa.jpg" style="height:100px;width:100px;" class="img-thumbnail" onclick="check()">
+          </div>
+        </div>
+    </div>
+  
+<div class="modal fade" id="right-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">恭喜</h4>
+        </div>
+        <div class="modal-body" style="text-align:center">
+            <img src="../img/chengwa.jpg" class="img-thumbnail">
+            <p>我三娃千里眼顺风耳，还有我看不到的？</p>
+            <p>去密码锁选择 452</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  
+
+  <div class="modal fade" id="wrong-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">错误</h4>
+          </div>
+          <div class="modal-body" style="text-align:center">
+              <img src="../img/yeye.jpg" class="img-thumbnail">
+              <p>唉，孩子，你找东西选这个二货干啥</p>
+              <p>你让爷爷很忧伤啊</p>
+  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+  </body>
+  <script src="../js/jquery-2.0.3.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  
+  <script>
+    function check() {
+      $('#wrong-modal').modal('show')
+    }
+
+    function rightchose() {
+      $('#right-modal').modal('show')
+    }
+  </script>
